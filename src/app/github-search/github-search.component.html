@@ -1,0 +1,85 @@
+<div [formGroup]="form" fxLayout="row wrap" fxLayoutAlign="space-between start" class="backgroundcolor">
+
+  <mat-form-field class="width-input" appearance="fill">
+    <mat-label><em>User</em></mat-label>
+    <input matInput placeholder="ex: Bassam..." formControlName="user">
+  </mat-form-field>
+
+  <mat-paginator #paginator class="primary" [pageSize]="10" [length]="lenght" [pageSizeOptions]="[5, 10, 25]"
+    showFirstLastButtons class="backgroundcolor">
+  </mat-paginator>
+</div>
+
+
+
+<div fxLayout="row wrap" fxLayoutAlign="space-around center" class="backgroundcolor">
+
+  <ng-container *ngIf=" dataResult$ | async as dataResult ">
+
+    <mat-toolbar-row>
+
+      <div class="title-list">Liste des Utilisateur <div id="after"></div>
+      </div>
+
+    </mat-toolbar-row>
+
+    <div *ngFor="let user of dataResult.items" style="margin:10px 30px ;">
+
+      <mat-card flex-gt-sm [style.width]="'100%'">
+
+        <!-- the header of the card -->
+        <mat-card-header>
+          <mat-card-title>
+            <picture>
+              <img class="custom-avatar" [srcset]="user.avatar_url">
+            </picture>
+          </mat-card-title>
+          <mat-card-subtitle>
+            <span class="badge-username">
+              <div class="dot"></div>
+
+              {{user.login.slice()}}
+            </span>
+
+          </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-divider></mat-divider>
+
+        <!-- the content of the card -->
+
+        <div style="margin:10px 10px;">
+
+          <mat-list-item>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+              <mat-icon matListAvatar>label_important</mat-icon>
+              <span matLine>
+                <b>ID : </b>{{user.id}}
+              </span>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+              <mat-icon matListAvatar>account_circle</mat-icon>
+              <span matLine>
+                <b>Type : </b>{{user.type}}
+              </span>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+              <mat-icon matListAvatar>show_chart</mat-icon>
+              <span matLine>
+                <b>Score : </b>{{user.score}}
+              </span>
+            </div>
+          </mat-list-item>
+        </div>
+
+      </mat-card>
+    </div>
+  </ng-container>
+
+</div>

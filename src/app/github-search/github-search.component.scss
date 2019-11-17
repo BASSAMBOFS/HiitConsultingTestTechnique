@@ -1,0 +1,76 @@
+.title-list {
+  position: relative;
+  width: 250px;
+  background: #505c73;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 400;
+  color: #fff;
+  height: 26px;
+}
+
+#after {
+  height: 36px;
+  position: absolute;
+  width: 26px;
+  top: 0;
+  right: -17px;
+  background-color: #505c73;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+//Radius image
+.custom-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.backgroundcolor {
+  background-color: whitesmoke;
+}
+
+.width-input {
+  width: 50%;
+}
+
+.badge-username {
+  color: black;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 1px 10px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #30943d;
+  border-radius: 50%;
+  line-height: 8px;
+  display: inline-block;
+}
+
+::ng-deep {
+
+  //forcing the backgroung color of the form field
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: whitesmoke !important;
+  }
+
+  .mat-card-header-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mat-card {
+    border-left: 3px solid #505c73;
+    width: 100%;
+  }
+}
