@@ -19,3 +19,8 @@ mat-card {
   color: white;
   font-size: 170%
 }
+
+::ng-deep .success-snackbar {
+  background-color: rgb(12, 255, 158);
+  color: rgb(27, 26, 26);
+}

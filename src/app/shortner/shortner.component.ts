@@ -37,4 +37,10 @@ export class ShortnerComponent implements OnInit {
         });
       });
   }
+  copy(text: string) {
+    this.snackBar.open("IS Copied :feu::feu::feu::feu: !! ", "Dismiss", {
+      duration: 5000,
+      panelClass: ["success-snackbar"]
+    });
+  }
 }
