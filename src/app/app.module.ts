@@ -11,6 +11,7 @@ import { MenuListItemComponent } from "./core/menu-list-item/menu-list-item.comp
 import { GithubSearchComponent } from "./github-search/github-search.component";
 import { ShortnerComponent } from "./shortner/shortner.component";
 import { MessageComponent } from "./message/message.component";
+import { BigDataComponent } from './big-data/big-data.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MessageComponent } from "./message/message.component";
     MenuListItemComponent,
     ShortnerComponent,
     GithubSearchComponent,
-    MessageComponent
+    MessageComponent,
+    BigDataComponent
   ],
   imports: [
     BrowserModule,

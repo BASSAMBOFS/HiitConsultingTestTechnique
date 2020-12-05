@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { ShortnerComponent } from './shortner/shortner.component';
+import { BigDataComponent } from './big-data/big-data.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'shortner',
     component : ShortnerComponent
+  },
+  {
+    path: 'bigdata',
+    component : BigDataComponent
   }
 ];
 

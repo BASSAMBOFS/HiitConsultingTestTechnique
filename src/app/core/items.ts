@@ -10,5 +10,10 @@ export const NAV_LINKS: NavItem[] = [
     displayName: "Shortner",
     iconName: "transform",
     route: "shortner"
+  },
+  {
+    displayName: "Big Data",
+    iconName: "analytics",
+    route: "bigdata"
   }
 ];
