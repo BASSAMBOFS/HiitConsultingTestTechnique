@@ -1,0 +1,30 @@
+.header {
+    padding: 10px;
+    height: 48px;
+    background: #505c73;
+    color: white;
+    font-size: 170%
+  }
+
+  .example-container {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container>* {
+    width: 100%;
+  }
+  
+  mat-card {
+    padding: 0 !important;
+  }
+
+  ::ng-deep .success-snackbar {
+    background-color: rgb(12, 255, 158);
+    color: rgb(27, 26, 26);
+  }
+
+  ::ng-deep .mat-card-actions {
+    margin-left: 0px !important;
+}

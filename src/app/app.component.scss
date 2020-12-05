@@ -87,6 +87,7 @@ p {
     text-align: center;
     font-weight: 300;
     letter-spacing: 8px;
+    position: absolute;
   }
   .menuBtn {
     position: absolute;
@@ -109,4 +110,6 @@ p {
     height: 45px;
   }
   
-  
+  .example-spacer {
+    flex: 1 1 auto;
+  }

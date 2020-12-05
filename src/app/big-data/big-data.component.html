@@ -1,0 +1,49 @@
+<div style="padding: 50px;">
+  <mat-card>
+    <div fxLayout="row" fxLayoutAlign="center center" class="header">
+      Data Script Runner
+    </div>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <div fxLayout="column" fxLayoutAlign="center center" style="margin-top: 18px">
+
+        <mat-form-field style="width: 90%">
+          <mat-label>Scripts</mat-label>
+          <mat-select [formControl]="scripts" multiple [(value)]="selected">
+            <mat-option *ngFor="let script of allScripts" [value]="script">{{script}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+    </mat-card-content>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+      <button mat-raised-button color="primary">Run</button>
+      <button mat-raised-button color="accent">Stop</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+
+<mat-divider></mat-divider>
+
+<div style="padding: 50px;" *ngIf="true">
+    <mat-card>
+        <div fxLayout="row" fxLayoutAlign="center center" class="header">
+          Loading
+        </div>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="center center" style="margin-top: 18px">
+      
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+
+      
+          </div>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          
+        </mat-card-actions>
+      </mat-card>
+</div>

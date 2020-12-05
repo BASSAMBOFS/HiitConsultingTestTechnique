@@ -62,7 +62,6 @@ export class GithubSearchComponent implements OnInit {
 
   // a methode to get data with a critaria
   getDataByUserName(dataToSend: DataToSend) {
-    console.log();
     return this.guithubService.search(
       dataToSend.UserName,
       dataToSend.perPage,

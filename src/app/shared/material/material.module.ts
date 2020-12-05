@@ -14,7 +14,9 @@ import {
   MatSidenavModule,
   MatSliderModule,
   MatSlideToggleModule,
-  MatGridListModule
+  MatGridListModule,
+  MatSelectModule,
+  MatProgressBarModule
 } from "@angular/material";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTooltipModule } from "@angular/material/tooltip";
@@ -48,7 +50,9 @@ import { MatListModule } from "@angular/material/list";
     MatSlideToggleModule,
     MatSnackBarModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule {}
